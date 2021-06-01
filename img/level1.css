@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.p{
+    background-color: green;
+    text-align: center;
+
+}
+.p ul {
+    display: inline-flex;
+    list-style-type: none;
+    color: white;
+}
+.p ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.p ul li a {
+    text-decoration: none;
+    color: white;
+}
+.active, .p ul li:hover  {
+    background: lightgreen;
+    color: white;
+    border-radius: 3px;
+   
+}
+.sub {
+    display: none;
+}
+.p ul li:hover , .sub {
+    display: block;
+    position: absolute;
+    background: green;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.p ul li:hover , .sub ul {
+    display: block;
+    margin: 10px;
+}
